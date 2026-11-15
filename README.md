@@ -2,7 +2,7 @@
 
 Gridfinity base plates and bins sized to a space you measured, as printable STLs.
 
-This is the geometry behind [Wodgit](https://wodgit.lab.mckinleymedia.com). It runs in the browser
+This is the geometry behind Wodgit. It runs in the browser
 or in Node on [manifold-3d](https://github.com/elalish/manifold), with no OpenSCAD.
 
 - **Fits the real space.** Interiors are rarely a multiple of 42 mm. The leftover
