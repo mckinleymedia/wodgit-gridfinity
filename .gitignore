@@ -1,0 +1,6 @@
+node_modules/
+dist/
+tools/out/
+tools/regression/out/
+tools/regression/bins/out/
+*.tsbuildinfo

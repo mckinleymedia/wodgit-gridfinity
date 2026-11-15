@@ -1,0 +1,23 @@
+[
+  {
+    "name": "220x190-single",
+    "plate": [220, 190],
+    "bed": [250, 220],
+    "ref": "reference/grid-bases/gridfinity-gridflock-baseplate-250x220-220x190-683c8.stl",
+    "note": "Single segment (fits bed). No connectors. Core geometry. EXPECTED PASS."
+  },
+  {
+    "name": "320x320-4seg",
+    "plate": [320, 320],
+    "bed": [250, 220],
+    "ref": "reference/grid-bases/gridfinity-gridflock-baseplate-250x220-320x320-e9446.stl",
+    "note": "4 segments, intersection puzzle connectors + 4 engraved numbers. Envelope exact; deviation confined to connector seams + numbers."
+  },
+  {
+    "name": "310x506-6seg",
+    "plate": [310, 506],
+    "bed": [250, 220],
+    "ref": "reference/grid-bases/gridfinity-gridflock-baseplate-250x220-310x510.stl",
+    "note": "6 segments. Reference filename says 510 but its true plate height is 506mm (verified: overall Y extent 526 = 504 cells + 2 padding + 20 gap). Illustrates that filenames do NOT encode exact input params."
+  }
+]

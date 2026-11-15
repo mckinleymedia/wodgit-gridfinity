@@ -1,0 +1,40 @@
+{
+  "name": "wodgit-gridfinity",
+  "version": "0.1.0",
+  "description": "Gridfinity base plates and bins sized to a measured space, as printable STLs. The geometry behind Wodgit, on manifold-3d.",
+  "license": "MIT",
+  "author": "Will McKinley",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mckinleymedia/wodgit-gridfinity.git"
+  },
+  "homepage": "https://github.com/mckinleymedia/wodgit-gridfinity#readme",
+  "keywords": ["gridfinity", "3d-printing", "stl", "manifold", "baseplate", "bin", "organizer"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src", "LICENSE", "NOTICE.md"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts",
+    "regression": "bash tools/regression/run.sh && bash tools/regression/bins/run.sh",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "peerDependencies": {
+    "manifold-3d": "^3.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "manifold-3d": "^3.5.1",
+    "tsx": "^4.23.1",
+    "typescript": "^5.9.3"
+  }
+}

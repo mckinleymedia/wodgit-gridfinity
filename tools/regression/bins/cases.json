@@ -1,0 +1,12 @@
+{
+  "note": "Gridfinity bin/bin regression cases. Each case: nx*ny cells, `units` height units (7 mm). `ref` names a GridFlock 'box' reference STL under reference/bins/. Run: tools/regression/bins/run.sh",
+  "cases": [
+    { "id": "box-1-1-2", "nx": 1, "ny": 1, "units": 2, "ref": "box-1-1-2.stl", "why": "smallest useful bin" },
+    { "id": "box-1-1-3", "nx": 1, "ny": 1, "units": 3, "ref": "box-1-1-3.stl", "why": "minimum footprint" },
+    { "id": "box-2-3-4", "nx": 2, "ny": 3, "units": 4, "ref": "box-2-3-4.stl", "why": "even x odd, mid height" },
+    { "id": "box-2-4-7", "nx": 2, "ny": 4, "units": 7, "ref": "box-2-4-7.stl", "why": "original case" },
+    { "id": "box-3-3-6", "nx": 3, "ny": 3, "units": 6, "ref": "box-3-3-6.stl", "why": "odd square" },
+    { "id": "box-5-2-9", "nx": 5, "ny": 2, "units": 9, "ref": "box-5-2-9.stl", "why": "long + tall" },
+    { "id": "box-6-6-12", "nx": 6, "ny": 6, "units": 12, "ref": "box-6-6-12.stl", "why": "large footprint, tall" }
+  ]
+}
